@@ -3,6 +3,5 @@ platforms/ios
 plugins/cordova-*
 plugins/ionic-*
 node_modules
-www/index.html
 www/app
 .editorconfig
