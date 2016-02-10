@@ -33,23 +33,23 @@ a component structure with Angular 1.5 in the interim.
 
 ## Structure
 ```
-| gulp-tasks // individual gulp tasks required by gulpfile.js
-| hooks // ionic hooks
-| node_modules // dependencies
-| platforms // ionic platforms, populated with platform add
-| resources // ionic resources, no need to edit these
-| src 
+| gulp-tasks 
+| hooks
+| node_modules 
+| platforms - ionic platforms, no need to edit this directly
+| resources - ionic resources, no need to edit this directly
+| src - application specific code and resources
   \ resources
-     \ fonts // ionic fonts
-     \ img // images
-     \ scss // sass entry point to all ionic scss files
-  \ modules // each module in this folder can contain angular module definitions, services, specs etc
+     \ fonts 
+     \ img 
+     \ scss 
+  \ modules - application modules, services, controllers and specs live in module folders
+  - entry.js - webpack entry point
+  - entry.test.js - karma/webpack entry point
+  - initialise-ionic.js - imports ionic and it's dependencies
 | www
-  \ app // distribution files after bundling with webpack
-  - index.html // actual index.html file used in the application
-  - entry.js // app entry point for webpack, brings in runtime dependencies
-  - entry.test.js // test app entry point, brings in angular mocks
-  - initialise-ionic.js // initiates angular and ionic
+  \ app - distribution js and resources after bundling with webpack
+  - index.html - loads webpack bundle
 ```
 
 Note that, deliberately, there are no folders for 'controllers' or 'services'. This is to keep related functionality 
@@ -57,7 +57,7 @@ together and is generally considered best practice and also in line with the 'co
 Angular 2.
 
 ES2015 import syntax is used which would normally be expected to load only JS modules, however as 
-we are bundling with webpack, we can also import scss and html files.
+we are bundling with webpack, we can also import sass and html.
 
 ## Gulp Tasks
 - `gulp karma:once` - run all tests once
