@@ -1,0 +1,10 @@
+{
+  "name": "ionic-es2015",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true
+  },
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "forOf": true,
+    "generators": true,
+    "jsx": false,
+    "modules": true,
+    "restParams": true,
+    "spread": true
+  },    
+  "globals": {
+    "angular": true,
+    "cordova": true,
+    "inject": true,
+    "ionic": true,
+    "window": true,
+    "describe": true,
+    "beforeEach": true,
+    "it": true,
+    "jasmine": true,
+    "expect": true
+  },
+  "plugins": ["jasmine"],
+  "rules": {
+    "eol-last": 2,
+    "indent": [2, 2],
+    "require-yield": 2,
+    "no-var": 2,
+    "jasmine/no-focused-tests": 1,
+    "jasmine/no-disabled-tests": 1,
+    "jasmine/no-spec-dupes": 1,
+    "jasmine/no-suite-dupes": 1,
+    "jasmine/no-suite-callback-args": 1,
+    "jasmine/missing-expect": 1,
+    "jasmine/valid-expect": 1
+  }
+}
