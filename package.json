@@ -1,7 +1,7 @@
 {
-  "name": "stylo-client",
-  "version": "1.1.1",
-  "description": "stylo-client: An Ionic project",
+  "name": "ionic-es2015",
+  "version": "0.0.1",
+  "description": "ionic-es2015: An Ionic project",
   "dependencies": {
     "angular": "^1.4.3",
     "angular-animate": "^1.4.3",
